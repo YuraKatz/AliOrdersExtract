@@ -70,7 +70,7 @@ public class OrderExtractor
 
     private static async Task<decimal> GetExchangeRateAsync(DateTime date)
     {
-        string accessKey = "2jVnIPWhkjKg2B7seiB02UVupl11VbCI"; // Replace with your access key
+        string accessKey = "API_KEY"; // Replace with your access key
         string apiUrl = $"https://api.apilayer.com/exchangerates_data/convert?to=ILS&from=USD&amount=1&apikey={accessKey}";
         var client = new HttpClient();
         string response = await client.GetStringAsync(apiUrl);
